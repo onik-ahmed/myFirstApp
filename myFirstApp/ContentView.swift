@@ -13,11 +13,16 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Hello, World!")
+            Text("This is my first app on iOS")
+            Button("Click me") {
+                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+            }
         }
         .padding()
     }
 }
+
 
 #Preview {
     ContentView()
