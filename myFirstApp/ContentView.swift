@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  myFirstApp
+//  Emoji Picker
 //
 //  Created by Onik Ahmed on 3/22/25.
 //
@@ -20,7 +20,7 @@ struct ContentView: View {
                 Text(selection.rawValue)
                     .font(.system(size: 150))
                 
-                Picker("Select Emoji", selection: $selection) {
+                Picker("Select Emojis", selection: $selection) {
                     ForEach(Emoji.allCases, id: \.self) { emoji in
                         Text(emoji.rawValue)
                     }
