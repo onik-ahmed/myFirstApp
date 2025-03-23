@@ -20,7 +20,7 @@ struct ContentView: View {
                 Text(selection.rawValue)
                     .font(.system(size: 150))
                 
-                Picker("Select Emojiss", selection: $selection) {
+                Picker("Select a Emoji", selection: $selection) {
                     ForEach(Emoji.allCases, id: \.self) { emoji in
                         Text(emoji.rawValue)
                     }
